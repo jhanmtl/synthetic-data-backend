@@ -7,7 +7,6 @@ import cv2
 import numpy as np
 import imgController as controller
 
-# comment test
 
 class RawForm(BaseModel):
     shape: str

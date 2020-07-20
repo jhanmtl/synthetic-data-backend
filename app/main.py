@@ -77,7 +77,8 @@ placeholder = np.ones((224, 224, 3)) * 225
 placeholder = placeholder.astype(np.uint8)
 
 app = FastAPI()
-origins = ["http://localhost:3000"]
+origins = ["https://jhanmtl.github.io",
+           "http://localhost:3000"]
 
 app.add_middleware(
     CORSMiddleware,

@@ -134,4 +134,5 @@ async def read_form(rawform: RawForm):
                 "lower corner": "({},{})".format(x2, y2)
                 }
     # print(json.dumps(sendinfo))
+
     return {"img": encode, "info": sendinfo}

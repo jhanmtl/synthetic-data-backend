@@ -6,7 +6,7 @@ import base64
 import cv2
 import numpy as np
 import imgController as controller
-
+import asyncio
 
 class RawForm(BaseModel):
     shape: str
@@ -133,6 +133,5 @@ async def read_form(rawform: RawForm):
                 "upper corner": "({},{})".format(x1, y1),
                 "lower corner": "({},{})".format(x2, y2)
                 }
-    # print(json.dumps(sendinfo))
-
+    # await asyncio.sleep(10)
     return {"img": encode, "info": sendinfo}
